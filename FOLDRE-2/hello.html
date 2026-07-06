@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellow</title>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        document.querySelector("form").onsubmit = function () {
+           let name =  document.querySelector("#name").value;
+           alert(`hellow ${name}`);
+        }
+
+    });
+
+    </script>
+</head>
+<body>
+    <h1>hellow world</h1>
+    <form>
+        <input autofocus id="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+</body>
+</html>

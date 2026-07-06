@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            document.querySelectorAll("button").forEach(function(button) {
+                button.onclick = function() {
+                    document.querySelector('#hellow').style.color = button.dataset.color;
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+   <h1 id="hellow">Hellow world this is my page</h1>
+   <button data-color="red">red</button>
+   <button data-color="gold">gold</button>
+   <button data-color="blue">blue</button>
+   <button data-color="black">balck</button>
+</body>
+</html>
