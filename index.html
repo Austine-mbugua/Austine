@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW CARS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="austin.css">
+</head>
+
+<style>
+        div {
+            border: 5px solid rgb(0, 0, 2);
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+            
+        }
+        .players{
+            border: 2px solid red;
+            background-color: aqua;
+        }
+        table{
+            border: 1px solid rgba(30, 5, 254, 0.431);
+        }
+</style>
+
+<body>
+    
+        <h1>BMW</h1>
+    <h2 style="text-align: center;">Why choose the BMW</h2>
+    <div> {
+    <img src="download.jpeg" class="rounded mx-auto d-block" alt="BMW" width="500" height="450">
+    </div> }
+    <p>bmw was found in the year 1916 on march</p>
+    <div class="players">
+        <table>
+            <tr>
+                <tr>Players</tr>
+                <tr>country</tr>
+            </tr>
+            <tr>
+                <th>Messi</th>
+                <th>Ronaldo</th>
+                <th>Mbappe</th>
+            </tr>
+            <tr>
+                <th>Argentina</th>
+                <th>Portugal</th>
+                <th>France</th>
+            </tr>
+        </table>
+    </div>
+   <div>
+         <table border="6">
+        <thead>
+            <th>brand Bmw </th>
+            <th>year published</th>
+        </thead>
+        <tr>
+            <td> BMW i8</td>
+            <td>BMW m4</td>
+        </tr>
+        <tr>
+            <td>1996</td>
+            <td>2000</td>
+        </tr>
+    </table>
+    if you are intrested in our products fill free to fill an apllication
+    <form>
+        <input id="name" type="text" placeholder="full name">
+        <input type="submit">
+        <input type="name" list="countries" placeholder="country">
+    </form>
+   </div>
+   <h2 id="BMW"> form more clarifications for buying the car which color do u like your car in</h2>
+   <button data-color="red">red</button>
+   <button data-color="blue">blue</button>
+   <button data-color="black">black</button>
+   <button data-color="gold">gold</button>
+   <button data-color="white">white</button>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        document.querySelector("form").onsubmit = function () {
+           let name =  document.querySelector("#name").value;
+           alert(`thank you for your co_ operation ${name}`);
+        }
+
+    });
+ document.addEventListener('DOMContentLoaded', function() {
+            
+            document.querySelectorAll("button").forEach(function(button) {
+                button.onclick = function() {
+                    document.querySelector('#hellow').style.color = button.dataset.color;
+                }
+
+            });
+        });
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
