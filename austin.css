@@ -2,5 +2,22 @@ h1{
     color: blue; text-align: center; block-size: 70;
 
 }
-
-
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;    
+}
+.container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.options{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container a{
+    color: black;
+    text-decoration: none;
+}
