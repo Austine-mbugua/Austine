@@ -24,6 +24,7 @@
         background-color: blue; /*make the image fit perfectly insede the card*/
         border-radius: 8px;
         margin-top: 15px;
+         class="ima-fluid";
     }
     button{
         background-color: blue; /* Bmw blue button */
@@ -40,20 +41,30 @@
     }
     @media (min-width: 600px) {
         body {
-            background-color: teal;
+            background-color:blanchedalmond;
         }
-        @media (max-width: 599px) {
+    }
+    @media (max-width: 599px) {
             body {
                 background-color: firebrick;
             }
+            .img-fluid{
+                width: 300px;
+                height: auto;
+            }
         }
-    }
 </style>
 <body>
     <div class="car-card" >
         <h1>Bmw m4 coupe</h1>
         <p>A high performance sport car with a twin-turbo engine and aggressive styling.</p>
-        <img src="m4.jpeg" >
+        <div class="card" style="width: 18rem;">
+  <img class="img-fluid" src="m4.jpeg" alt="Bmw m4 coupe">
+  <div class="card-body">
+  </div>
+        
+
+    </div>
         <br>
         <button onclick="alert('booking feature coming soon !')">book a test drive</button>
     </div>
@@ -104,6 +115,7 @@
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       <br>
         <button onclick="alert('thank you for your time !')">for qustions submition</button>
-          
+        <p>For more information you are welcomed to visit our main site which will be provided in the link below</p>
+                
 </div>
 </body>
