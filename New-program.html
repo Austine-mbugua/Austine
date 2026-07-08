@@ -36,7 +36,17 @@
         margin-top: 20px;
     }
     button:hover{
-        background-color: brown; /*turns m-power red when you hover over it*/
+        background-color: red; /*turns m-power red when you hover over it*/
+    }
+    @media (min-width: 600px) {
+        body {
+            background-color: teal;
+        }
+        @media (max-width: 599px) {
+            body {
+                background-color: firebrick;
+            }
+        }
     }
 </style>
 <body>
