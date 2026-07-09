@@ -1,6 +1,39 @@
-h1{
-    color: blue; text-align: center; block-size: 70;
+<style>
+        div {
+            border: 5px solid rgb(0, 0, 2);
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+            
+        }
+        .players{
+            border: 2px solid red;
+            background-color: aqua;
+        }
+        table{
+            border: 1px solid rgba(30, 5, 254, 0.431);
+            
+        }
+        @media (min-width: 600px) {
+           body {
+            background-color: rgb(4, 119, 252);
+            text-align: center;
+           } 
+        }
+        @media (max-width: 599px) {
+            body {
+                background-color: brown;
+            }
 
+        }
+</style>
+h1{
+    color: blue; text-align: center; block-size: 100;
+
+}
+h2{
+    color: aliceblue; text-align: center;block-size: 50;
 }
 .options{
     display: flex;
@@ -21,3 +54,7 @@ h1{
     color: black;
     text-decoration: none;
 }
+    #foo{
+        border: 10px;
+        text-align: center;
+    }
